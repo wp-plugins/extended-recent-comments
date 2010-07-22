@@ -4,7 +4,7 @@ Author URL: http://louyblog.wordpress.com/
 Tags: widget, recent, comments, extended, comment, extended-recent-comments
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: trunk
+Stable tag: 1.0
 
 Add a recent comments widget that shows Gravatars.
 
