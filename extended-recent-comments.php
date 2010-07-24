@@ -6,6 +6,8 @@ Author: Louy Alakkad
 Version: 1.0
 Author URI: http://louyblog.wordpress.com/
 Plugin URL: http://l0uy.wordpress.com/tag/erc/
+Text Domain: erc-widget
+Domain Path: /languages
 */
 /**
  * init ERC by registering our widget.
@@ -15,6 +17,9 @@ function erc_init() {
 }
 add_action( 'widgets_init', 'erc_init' );
 
+// load translations
+load_plugin_textdomain( 'erc-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 /**
  * Recent_Comments widget class
  *
@@ -23,8 +28,8 @@ add_action( 'widgets_init', 'erc_init' );
 class Extended_Recent_Comments_Widget extends WP_Widget {
 
 	function Extended_Recent_Comments_Widget() {
-		$widget_ops = array('classname' => 'widget_erc', 'description' => __( 'The most recent comments, with Gravatars' ) );
-		$this->WP_Widget('extended-recent-comments', __('Extended Recent Comments'), $widget_ops);
+		$widget_ops = array('classname' => 'widget_erc', 'description' => __( 'The most recent comments, with Gravatars.' , 'erc-widget') );
+		$this->WP_Widget('extended-recent-comments', __('Extended Recent Comments', 'erc-widget'), $widget_ops);
 		$this->alt_option_name = 'widget_erc';
 
 		if ( is_active_widget(false, false, $this->id_base) )
@@ -58,7 +63,7 @@ class Extended_Recent_Comments_Widget extends WP_Widget {
 
  		extract($args, EXTR_SKIP);
  		$output = '';
- 		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Comments') : $instance['title']);
+ 		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Comments', 'erc-widget') : $instance['title']);
 
 		if ( ! $number = (int) $instance['number'] )
  			$number = 5;
@@ -77,7 +82,7 @@ class Extended_Recent_Comments_Widget extends WP_Widget {
 			foreach ( (array) $comments as $comment) {
 				$output .=  '<li class="erc-comment">';
 				$output .=  get_avatar(get_comment_author_email($comment->comment_ID), $size) . ' ';
-				$output .=  /* translators: extended comments widget: 1: comment author, 2: post link */ sprintf(__('%1$s on %2$s'), get_comment_author_link(), '<a href="' . esc_url( get_comment_link($comment->comment_ID) ) . '">' . get_the_title($comment->comment_post_ID) . '</a>');
+				$output .=  /* translators: extended comments widget: 1: comment author, 2: post link */ sprintf(__('%1$s on %2$s', 'erc-widget'), get_comment_author_link(), '<a href="' . esc_url( get_comment_link($comment->comment_ID) ) . '">' . get_the_title($comment->comment_post_ID) . '</a>');
 				$output .=  '<br style="clear:both;height:0;margin:0;padding:0;" /></li>';
 			}
  		}
@@ -109,13 +114,13 @@ class Extended_Recent_Comments_Widget extends WP_Widget {
 		$number = isset($instance['number']) ? absint($instance['number']) : 5;
 		$size = isset($instance['size']) ? absint($instance['size']) : 40;
 ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'erc-widget'); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-		<p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of comments to show:'); ?></label>
+		<p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of comments to show:', 'erc-widget'); ?></label>
 		<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
 		
-		<p><label for="<?php echo $this->get_field_id('size'); ?>"><?php _e('Avatar size:'); ?></label>
+		<p><label for="<?php echo $this->get_field_id('size'); ?>"><?php _e('Avatar size:', 'erc-widget'); ?></label>
 		<input id="<?php echo $this->get_field_id('size'); ?>" name="<?php echo $this->get_field_name('size'); ?>" type="text" value="<?php echo $size; ?>" size="3" /></p>
 <?php
 	}
