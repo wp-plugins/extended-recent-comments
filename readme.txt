@@ -1,5 +1,5 @@
 === Plugin Name ===
-Authors: louyx
+Contributors: louyx
 Author URL: http://louyblog.wordpress.com/
 Plugin URL: http://l0uy.wordpress.com/teg/extended-recent-comments/
 Tags: widget, recent, comments, extended, comment, extended-recent-comments
