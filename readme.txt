@@ -1,5 +1,5 @@
 === Plugin Name ===
-Authors: louyx
+Contributors: louyx
 Author URL: http://louyblog.wordpress.com/
 Tags: widget, recent, comments, extended, comment, extended-recent-comments
 Requires at least: 2.9
