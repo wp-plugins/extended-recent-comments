@@ -1,0 +1,48 @@
+# Translation of the WordPress plugin Extended Recent Comments 1.0 by Louy Alakkad.
+# Copyright (C) 2010 Louy Alakkad
+# This file is distributed under the same license as the RTLer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: RTLer 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/extended-recent-comments\n"
+"POT-Creation-Date: 2010-07-21 12:34+0000\n"
+"PO-Revision-Date: 2010-07-24 00:34+0200\n"
+"Last-Translator: Louy <louy08@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Arabic\n"
+
+msgid "Extended Recent Comments"
+msgstr "آحدث التعليقات الموسعة"
+
+msgid "Add a recent comments widget that shows Gravatars."
+msgstr "يضيف ويدجت لأحدث التعليقات مع صورة الكاتب."
+
+msgid "Louy Alakkad"
+msgstr "لؤي العقاد"
+
+msgid "http://louyblog.wordpress.com/"
+msgstr "http://louyblog.wordpress.com/"
+
+msgid "The most recent comments, with Gravatars."
+msgstr "آحدث التعليقات, مع صور الكاتب."
+
+msgid "Recent Comments"
+msgstr "آحدث التعليقات"
+
+msgid "%1$s on %2$s"
+msgstr "%1$s على %2$s"
+
+msgid "Title:"
+msgstr "العنوان:"
+
+msgid "Number of comments to show:"
+msgstr "عدد التعليقات:"
+
+msgid "Avatar size:"
+msgstr "حجم الصورة:"
+
