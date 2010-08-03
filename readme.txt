@@ -15,7 +15,7 @@ This plugin adds a new widget that displays recent comments with the author avat
 == Changelog ==
 
 = 1.0 =
-* Inital release
+* Initial release
 
 == Installation ==
 
