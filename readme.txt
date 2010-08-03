@@ -15,11 +15,11 @@ This plugin adds a new widget that displays recent comments with the author avat
 
 == Changelog ==
 
-= 1.0 =
-* Inital release
-
 = 1.1 =
 * Adding Arabic language translation
+
+= 1.0 =
+* Initial release
 
 == Installation ==
 
