@@ -5,7 +5,7 @@ Plugin URL: http://l0uy.wordpress.com/teg/extended-recent-comments/
 Tags: widget, recent, comments, extended, comment, extended-recent-comments
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 1.1
+Stable tag: 1.2
 
 Add a recent comments widget that shows Gravatars.
 
@@ -14,6 +14,9 @@ Add a recent comments widget that shows Gravatars.
 This plugin adds a new widget that displays recent comments with the author avatar.
 
 == Changelog ==
+
+= 1.2 =
+* Adding French language translation (thanks Devil505 ^.^)
 
 = 1.1 =
 * Adding Arabic language translation

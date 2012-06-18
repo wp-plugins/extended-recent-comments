@@ -3,7 +3,7 @@
 Plugin Name: Extended Recent Comments
 Description: Add a recent comments widget that shows Gravatars.
 Author: Louy Alakkad
-Version: 1.1
+Version: 1.2
 Author URI: http://louyblog.wordpress.com/
 Plugin URL: http://l0uy.wordpress.com/tag/erc/
 Text Domain: erc-widget
