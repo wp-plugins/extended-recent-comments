@@ -1,0 +1,63 @@
+# Translation of the WordPress plugin Extended Recent Comments 1.1 by Louy Alakkad.
+# Copyright (C) 2010 Louy Alakkad
+# This file is distributed under the same license as the Extended Recent Comments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Extended Recent Comments 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/extended-recent-comments\n"
+"POT-Creation-Date: 2010-07-24 12:53+0000\n"
+"PO-Revision-Date: 2010-07-24 17:00+0200\n"
+"Last-Translator: Louy Alakkad <louy08@gmail.com>\n"
+"Language-Team: Louy Alakkad <louy08@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: extended-recent-comments.php:31
+msgid "The most recent comments, with Gravatars."
+msgstr "آحدث التعليقات, مع صور الكاتب."
+
+#. #-#-#-#-#  plugin.pot (Extended Recent Comments 1.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: extended-recent-comments.php:32
+msgid "Extended Recent Comments"
+msgstr "آحدث التعليقات الموسعة"
+
+#: extended-recent-comments.php:66
+msgid "Recent Comments"
+msgstr "آحدث التعليقات"
+
+#. translators: extended comments widget: 1: comment author, 2: post link
+#: extended-recent-comments.php:85
+#, php-format
+msgid "%1$s on %2$s"
+msgstr "%1$s على %2$s"
+
+#: extended-recent-comments.php:117
+msgid "Title:"
+msgstr "العنوان:"
+
+#: extended-recent-comments.php:120
+msgid "Number of comments to show:"
+msgstr "عدد التعليقات:"
+
+#: extended-recent-comments.php:123
+msgid "Avatar size:"
+msgstr "حجم الصورة:"
+
+#. Description of the plugin/theme
+msgid "Add a recent comments widget that shows Gravatars."
+msgstr "يضيف ويدجت لأحدث التعليقات مع صورة الكاتب."
+
+#. Author of the plugin/theme
+msgid "Louy Alakkad"
+msgstr "لؤي العقاد"
+
+#. Author URI of the plugin/theme
+msgid "http://louyblog.wordpress.com/"
+msgstr "http://louyblog.wordpress.com/"
+
